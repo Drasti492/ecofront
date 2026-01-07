@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.image-wrapper {
+    text-align: center;
+    padding: 15px;
+}
+
+.image-wrapper img {
+    width: 70%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+form {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.phone-input {
+    display: flex;
+}
+
+.country-code {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.phone-input input {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.terms input {
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056cc;
+}
