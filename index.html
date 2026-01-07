@@ -16,7 +16,7 @@
 
     <!-- Form Section -->
     <form 
-        action="https://formspree.io/f/xpqwvpva" 
+        action="https://ecoback-9yuz.onrender.com/submit"
         method="POST"
         id="loanForm"
     >
@@ -47,24 +47,21 @@
             >
         </div>
 
-        <!-- Loan Amount -->
+        <!-- Loan Amount (no arrows) -->
         <div class="input-group">
             <label>Loan Amount (ZWL)</label>
             <input 
-                type="number" 
-                name="loan_amount" 
-                placeholder="Enter amount in ZWL" 
+                type="number"
+                name="loan_amount"
+                placeholder="Enter amount in ZWL"
                 required
+                class="no-spinner"
             >
         </div>
 
         <!-- Terms -->
         <div class="terms">
-            <input 
-                type="checkbox" 
-                id="terms" 
-                required
-            >
+            <input type="checkbox" id="terms" required>
             <label for="terms">
                 I agree that the loan will be repaid within the estimated duration.
             </label>

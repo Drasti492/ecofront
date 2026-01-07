@@ -103,3 +103,13 @@ h2 {
 .submit-btn:hover {
     background: #0056cc;
 }
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.no-spinner {
+    -moz-appearance: textfield; /* Firefox */
+}
