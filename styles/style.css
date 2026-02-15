@@ -31,7 +31,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #c40000;
+  background: #e48f8f;
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(230,0,0,0.35);
 }
@@ -135,7 +135,7 @@ input:focus, select:focus {
 
 .form-note {
   text-align: center;
-  color: #666;
+  color: #e60000;
   font-size: 0.95rem;
   margin-top: 24px;
 }
@@ -144,9 +144,10 @@ input:focus, select:focus {
 footer {
   text-align: center;
   padding: 40px 20px;
-  color: #777;
+  color: #fffefe;
   font-size: 0.95rem;
-  border-top: 1px solid #eee;
+  border-top:  #e60000;
+  background-color:  #d80202;
 }
 
 /* Responsive */
@@ -284,4 +285,35 @@ footer {
   .success-title {
     font-size: 2.2rem;
   }
+}
+
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.phone-input .prefix {
+  background: #f3f3f3;
+  padding: 12px;
+  font-weight: bold;
+  color: #333;
+  border-right: 1px solid #ddd;
+}
+
+.phone-input input {
+  border: none;
+  padding: 12px;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: #777;
 }

