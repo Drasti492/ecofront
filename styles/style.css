@@ -1,128 +1,287 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #f4f6f8;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9f9;
 }
 
-.form-container {
-    background: #fff;
-    width: 100%;
-    max-width: 420px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.image-wrapper {
-    text-align: center;
-    padding: 15px;
+.btn-primary {
+  display: inline-block;
+  background: #e60000;
+  color: white;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 20px rgba(230,0,0,0.25);
 }
 
-.image-wrapper img {
-    width: 70%;
-    max-height: 180px;
-    object-fit: contain;
+.btn-primary:hover {
+  background: #c40000;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(230,0,0,0.35);
 }
 
-form {
-    padding: 20px;
+.full-width {
+  width: 100%;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+/* Hero (index.html) */
+.hero {
+  background: linear-gradient(135deg, #e60000 0%, #b30000 100%);
+  color: white;
+  text-align: center;
+  padding: 120px 0 160px;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.vodapay-logo {
+  height: 70px;
+  margin-bottom: 16px;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 14px;
-    color: #555;
+.brand-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
 }
 
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.hero-headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
-.phone-input {
-    display: flex;
+.hero-subtitle {
+  font-size: 1.35rem;
+  opacity: 0.95;
+  margin-bottom: 48px;
 }
 
-.country-code {
-    background: #eee;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 14px;
+/* Form Header (apply.html) */
+.form-header {
+  background: linear-gradient(135deg, #e60000 0%, #c40000 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px 60px;
 }
 
-.phone-input input {
-    border-radius: 0 5px 5px 0;
-    border-left: none;
+.form-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
 }
 
-.terms {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    font-size: 13px;
-    color: #555;
+.form-header p {
+  font-size: 1.25rem;
+  opacity: 0.95;
 }
 
-.terms input {
-    margin-right: 8px;
-    margin-top: 3px;
+/* Form Section */
+.form-section {
+  padding: 60px 0 100px;
 }
 
-.submit-btn {
-    width: 100%;
-    background: #007bff;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+.form-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
 }
 
-.submit-btn:hover {
-    background: #0056cc;
+.loan-form {
+  display: grid;
+  gap: 28px;
 }
 
-.no-spinner::-webkit-inner-spin-button,
-.no-spinner::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.no-spinner {
-    -moz-appearance: textfield; /* Firefox */
+label {
+  font-weight: 600;
+  color: #e60000;
+  font-size: 1.05rem;
+}
+
+input, select {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  transition: all 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #e60000;
+  box-shadow: 0 0 0 4px rgba(230,0,0,0.15);
+}
+
+.form-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 24px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
+  font-size: 0.95rem;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero-headline { font-size: 2.6rem; }
+  .hero { padding: 80px 0 120px; }
+  .form-header h1 { font-size: 2.2rem; }
+}
+
+
+/* ────────────────────────────────────────
+   SUCCESS / CONFIRMATION PAGE
+───────────────────────────────────────── */
+
+.success-page {
+  background: linear-gradient(180deg, #fffafafa 0%, #f8f9fa 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.success-container {
+  max-width: 520px;
+  width: 100%;
+}
+
+.success-card {
+  background: white;
+  border-radius: 20px;
+  padding: 48px 32px;
+  box-shadow: 0 16px 60px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.checkmark-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 32px;
+  position: relative;
+}
+
+.checkmark-circle-bg {
+  stroke: #e60000;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: circle 0.6s ease-in-out forwards 0.4s;
+}
+
+.checkmark-check {
+  stroke: #e60000;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: check 0.6s ease-in-out forwards 0.8s;
+}
+
+.success-title {
+  font-size: 2.6rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .success-message {
-    display: none;
-    margin-top: 15px;
-    padding: 12px;
-    background: #e6f4ff; /* light blue */
-    color: #004085;
-    border-left: 5px solid #e60000; /* EcoCash red */
-    border-radius: 6px;
-    font-size: 14px;
-    text-align: center;
+  font-size: 1.35rem;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.4;
 }
 
+.success-detail {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.calm-note {
+  background: rgba(230,0,0,0.04);
+  border-left: 4px solid #e60000;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.success-card .btn-primary {
+  padding: 16px 48px;
+  font-size: 1.15rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes circle {
+  from {
+    stroke-dashoffset: 166;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes check {
+  from {
+    stroke-dashoffset: 48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .success-card {
+    padding: 40px 24px;
+  }
+  .success-title {
+    font-size: 2.2rem;
+  }
+}

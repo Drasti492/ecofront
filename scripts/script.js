@@ -1,17 +1,19 @@
 const form = document.getElementById("loanForm");
 const successMessage = document.getElementById("successMessage");
 
-form.addEventListener("submit", function () {
-    // Show styled success message
-    successMessage.style.display = "block";
+if (form) {
+  form.addEventListener("submit", () => {
 
-    // Disable button to prevent double submit
+    if (successMessage) {
+      successMessage.style.display = "block";
+      successMessage.innerText = "Submitting application...";
+    }
+
     const button = form.querySelector("button");
     button.disabled = true;
-    button.innerText = "Submitting...";
+    button.innerText = "Processing...";
 
-    // Redirect after short delay
-    setTimeout(() => {
-        window.location.href = "/success.html";
-    }, 2000);
-});
+    // DO NOT redirect here.
+    // Backend will redirect after saving.
+  });
+}

